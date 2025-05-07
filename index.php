@@ -1,0 +1,595 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <!-- ============ swiper js css  ============ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- ============ aos css  ============ -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- ============ site favicon  ============ -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <title>Home Three - Meme coin ICO & Crypto Tailwindcss Template</title>
+  <script defer src="assets/js/app.js"></script>
+  <link href="assets/css/index.css" rel="stylesheet">
+</head>
+
+<body class="relative bg-black text-base text-white">
+  <!-- scroll top -->
+  <button class="scroll-top border-danger hover:border-primary group fixed bottom-8 right-5 z-50 flex size-12 translate-y-20 items-center justify-center rounded-full border-2 bg-h1Primary2 opacity-0 duration-300 hover:text-title sm:bottom-10 sm:right-10">
+    <div class="bg-danger group-hover:bg-primary flex size-9 items-center justify-center rounded-full duration-300">
+      <i class="ph ph-arrow-up text-2xl text-black duration-300"></i>
+    </div>
+  </button>
+
+
+  <!-- navbar -->
+  <header class="desktop-nav-container fixed left-0 top-0 z-50 w-full max-4xl:px-5 max-xl:hidden">
+    <span class="absolute bottom-0 left-0 hidden h-px w-full bg-[#98FF38]/10 md:block">
+      <span class="line"></span>
+    </span>
+    <div class="custom-container flex items-center justify-between">
+      <a href="index.html">
+        <img src="./assets/images/logo-1.png" alt="logo" />
+      </a>
+      <ul class="flex items-center justify-between gap-5 py-[30px] xxl:gap-5">
+        <li class="list-none">
+          <a href="#how-to-buy" class="home-3-nav-item">HOW TO BUY</a>
+        </li>
+        <li class="list-none"><a href="#about" class="home-3-nav-item">
+            <span class="nav_link_label" data-text="About">
+              About
+            </span>
+          </a>
+        </li>
+        <li class=" list-none"><a href="#tokenomics" class="home-3-nav-item">TOKENOMICS</a></li>
+        <li class="list-none"><a href="#roadmap" class="home-3-nav-item">ROADMAP</a></li>
+        <li class="list-none"><a href="#faq" class="home-3-nav-item">FAQ</a></li>
+        <li class="list-none"><a href="#contact" class="home-3-nav-item">contact</a></li>
+      </ul>
+      <a href="#contact" class="button-primary-green">Get Started</a>
+    </div>
+  </header>
+  <!-- Mobile Menu -->
+  <div class="relative w-full xl:hidden">
+    <div id="overlay" class="invisible fixed right-0 top-0 z-[32] h-screen w-0 bg-black bg-opacity-60 duration-700 ease-in-out"></div>
+    <nav class="fixed top-0 z-[31] w-full bg-[#005909] shadow-lg xl:hidden">
+      <div class="container relative flex items-center justify-between px-3 py-3 md:py-5">
+        <a href="index.html">
+          <img src="./assets/images/logo-1.png" width="172" height="47" alt="logo" />
+        </a>
+        <button id="menuToggle" class="cursor-pointer p-2 xl:hidden">
+          <i class="ph ph-list text-[24px] text-h1Primary2" style="font-size: 30px"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed left-0 top-0 z-[33] h-screen w-full max-w-[350px] -translate-x-[120%] overflow-y-auto bg-light pb-4 shadow-2xl duration-700 ease-in-out xl:hidden">
+      <div class="flex items-center justify-between px-6 py-4">
+        <img src="./assets/images/logo-2.png" width="172" height="47" alt="logo" />
+        <button id="closeMenu" aria-label="mobile menu close" class="cursor-pointer text-n2">
+          <i class="ph ph-x text-[24px]"></i>
+        </button>
+      </div>
+      <ul class="px-3">
+        <!-- Home -->
+        <li class="w-full">
+          <button class="flex w-full items-center justify-between px-3 py-2 text-n2">
+            <span class="text-lg">Home</span>
+            <i class="ph ph-plus text-[24px]"></i>
+          </button>
+          <ul class="submenu" style="display: none">
+            <li><a href="/" class="inline-flex w-full px-5 py-2 text-n2">- Home 1</a></li>
+            <li><a href="home-2.html" class="inline-flex w-full px-5 py-2 text-n2">- Home 2</a></li>
+            <li><a href="home-3.html" class="inline-flex w-full px-5 py-2 text-n2">- Home 3</a></li>
+          </ul>
+        </li>
+
+        <li class="w-full">
+          <a href="#how-to-buy" class="inline-flex px-3 py-2 text-n2">How To Buy</a>
+        </li>
+        <li class="w-full">
+          <a href="#about" class="inline-flex px-3 py-2 text-n2">About</a>
+        </li>
+        <li class="w-full">
+          <a href="#tokenomics" class="inline-flex px-3 py-2 text-n2">Tokenomics</a>
+        </li>
+        <li class="w-full">
+          <a href="#roadmap" class="inline-flex px-3 py-2 text-n2">Roadmap</a>
+        </li>
+        <li class="w-full">
+          <a href="#contact" class="inline-flex px-3 py-2 text-n2">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <main class="relative">
+    <section class="noise relative overflow-hidden bg-repeat pt-[160px] before:absolute before:bottom-0 before:left-0 before:z-10 before:h-[130px] before:w-full before:bg-black">
+      <img src="./assets/images/home-3-banner-top-blur.webp" alt="Image" class="absolute -top-[15%] left-0 blur-[100px]" />
+      <img src="./assets/images/home-3-banner-middle-blur.webp" alt="Image" class="absolute left-0 top-[50%] blur-[100px]" />
+      <img src="./assets/images/home-3-banner-bottom-element.webp" alt="Image" class="absolute bottom-0 left-0" />
+      <img src="./assets/images/home-3-banner-line-bg.webp" alt="Image" class="absolute left-0 top-[232px]" />
+      <img src="./assets/images/home-3-banner-bottom-blur.webp" alt="Image" class="absolute bottom-0 left-1/2 -translate-x-1/2 blur-[150px]" />
+
+      <div class="max-lg:hidden">
+        <img src="./assets/images/home-3-banner-icon-1.png" alt="Image" class="animated-image absolute left-[10%] top-[17%] z-10" />
+        <img src="./assets/images/home-3-banner-icon-2.png" class="animated-image absolute left-[3%] top-[43%] z-10" alt="Image" />
+        <img src="./assets/images/home-3-banner-icon-3.png" class="animated-image absolute left-[30%] top-[35%] z-10" alt="Image" />
+        <img src="./assets/images/home-3-banner-icon-4.png" class="animated-image absolute left-[65%] top-[35%] z-10" alt="Image" />
+        <img src="./assets/images/home-3-banner-icon-5.png" class="animated-image absolute left-[85%] top-[30%] z-10" alt="Image" />
+        <img src="./assets/images/home-3-banner-icon-6.png" class="animated-image absolute left-[15%] top-[50%] z-10" alt="Image" />
+        <img src="./assets/images/home-3-banner-icon-7.png" class="animated-image absolute left-[75%] top-[50%] z-10" alt="Image" />
+        <img src="./assets/images/home-3-banner-icon-8.png" class="animated-image absolute left-[92%] top-[48%] z-10" alt="Image" />
+      </div>
+      <div class="container relative z-20">
+        <h1 class="d3 split_anim mx-auto max-w-[791px] text-center font-title-font">Bitcoin Meets Memeco</h1>
+        <p class="l-text reveal_anim mx-auto max-w-[571px] pt-6 text-center">Join the crypto revolution with fun, memes, and endless possibilities—your moon journey starts here!" 🚀</p>
+        <div class="reveal_anim flex items-center justify-center smt40px" data-reveal-from="bottom">
+          <img src="./assets/images/home-3-banner.webp" alt="Image" class="animate-top-bottom" />
+        </div>
+      </div>
+
+      <!-- <div class="relative z-20 -mt-40 overflow-hidden font-title-font lg:pb-15" data-reveal-from="right">
+        <div class="animated-text-strip text h2 -ml-11 w-[115%] translate-y-[86px] rotate-[7deg] border-2 border-[#98FE38] bg-black text-[#98FE38] sp40px xxl:rotate-[5deg]">
+          <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+          <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+          <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+          <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+          <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+          <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+        </div>
+        <div class="animated-text-strip text h2 -ml-11 w-[115%] translate-y-[-44px] rotate-[-5deg] border-2 border-[#98FE38] bg-black text-white sp40px max-md:mt-20 md:max-xl:mt-10 xxl:rotate-[-5deg]">
+          <span class="marquee-alt big-text">🚀 Don’t Miss the Next 1000x Coin! </span>
+          <span class="marquee-alt big-text">🚀 Don’t Miss the Next 1000x Coin!</span>
+          <span class="marquee-alt big-text">🚀 Don’t Miss the Next 1000x Coin!</span>
+          <span class="marquee-alt big-text">🚀 Don’t Miss the Next 1000x Coin! </span>
+          <span class="marquee-alt big-text">🚀 Don’t Miss the Next 1000x Coin!</span>
+          <span class="marquee-alt big-text">🚀 Don’t Miss the Next 1000x Coin!</span>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- How to Buy MEMECO  -->
+    <section class="relative overflow-hidden bg-contain bg-bottom bg-no-repeat spy120px" id="how-to-buy">
+      <img src="./assets/images/how_to_buy_background.svg" alt="" class="absolute " />
+
+      <div class="container">
+        <h3 class="title-white split_anim text-center">How to Buy MEMECO</h3>
+        <p class="m-text reveal_anim mx-auto mt-6 max-w-[589px] text-center">Getting your hands on memeco is quick and easy! Follow these simple steps to joining our community</p>
+        <div class="spt60px">
+          <div class="grid grid-cols-1 gap-10 spt32px lg:grid-cols-3 lg:gap-6">
+            <div class="reveal_anim pt-8 lg:pt-10 xl:pt-15" data-reveal-from="left">
+              <div class="how-to-buy-3">
+                <div class="how-to-buy-number">01</div>
+                <img src="./assets/images/how-to-buy-3.1.png" alt="Image" />
+                <h4 class="h4 mx-auto max-w-[250px] font-title-font spt40px">Set Up a Crypto Wallet</h4>
+                <p class="l-text mt-4 opacity-90">You’ll need a cryptocurrency wallet to store and trade your memeco</p>
+              </div>
+            </div>
+            <div class="reveal_anim pt-8 lg:pt-10 xl:pt-15" data-reveal-from="bottom">
+              <div class="how-to-buy-3">
+                <div class="how-to-buy-number">02</div>
+                <img src="./assets/images/how-to-buy-3.2.png" alt="Image" />
+                <h4 class="h4 mx-auto max-w-[250px] font-title-font spt40px">Select Token and Amount</h4>
+                <p class="l-text mt-4 opacity-90">Choose your desired token and enter the amount you wish to purchase.</p>
+              </div>
+            </div>
+            <div class="reveal_anim pt-8 lg:pt-10 xl:pt-15" data-reveal-from="right">
+              <div class="how-to-buy-3">
+                <div class="how-to-buy-number">03</div>
+                <img src="./assets/images/how-to-buy-3.3.png" alt="Image" />
+                <h4 class="h4 mx-auto max-w-[250px] font-title-font spt40px">Buy and Stake memeco</h4>
+                <p class="l-text mt-4 opacity-90">Click “Buy Now” and follow the on-screen instructions from your wallet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome to MEMECO -->
+    <section class="relative overflow-hidden bg-black spy120px" id="about">
+      <div class="custom-container">
+        <p class="overlay-text-content-3 mx-auto text-center font-title-font text-[50px] leading-[90%] sm:text-[70px] md:text-[120px] lg:text-[170px] xxl:text-[230px] 4xl:text-[300px]">MEMECO</p>
+
+        <!-- <img src="./assets/images/home-3-welcome-bluer.png" alt="Image" class="absolute -bottom-[50px] -left-[300] z-0" /> -->
+        <div class="container relative z-10 grid-cols-12 flex-col items-center gap-6 max-lg:flex lg:grid">
+          <div class="reveal_anim relative col-span-6">
+            <img src="./assets/images/home-3-welcome.webp" alt="Welcome Image" />
+          </div>
+          <div class="col-span-5 col-start-7">
+            <h3 class="title-white split_anim">Welcome to MEMECO</h3>
+            <h5 class="h6 reveal_anim mt-6 font-title-font">The Story Behind the Meme</h5>
+            <p class="m-text reveal_anim pt-4 opacity-90">Once upon a time, in the wild world of crypto, a legendary frog claimed the throne. No longer just a meme, this royal amphibian is now a symbol of fun, community, and financial freedom.</p>
+
+            <ul class="reveal_anim flex flex-col gap-3 pt-6 xxl:gap-4">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-[#7130c3]"></i> <span>No VCs, no big corporations, just pure meme magic!</span></li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-[#7130c3]"></i> <span>Memes rule the internet, and so do we!</span></li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-[#7130c3]"></i> <span>The frog doesn’t hop; it leaps to greatness!</span></li>
+            </ul>
+
+            <div class="spt40px">
+              <a href="#contact" class="button-primary-green">BUY MEMECO</a>
+            </div>
+            <div class="dashed-border-green reveal_anim rounded-[32px] bg-[rgba(255,255,255,0.10)] sp32px smt60px">
+              <h4 class="h4 font-title-font">324 % staking rewards</h4>
+              <p class="m-text pt-4">Earn massive 324% staking rewards and maximize your crypto gains with our game-changing staking system!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="decoration_item shape_shadow_1">
+        <img alt="Shape Color Shadow"
+          srcset="./assets/images/container-shape.svg 1x, ./assets/images/container-shape.svg 2x"
+          src="./assets/images/container-shape.svg"
+          width="254" height="196" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
+      </div>
+      <div class="decoration_item shape_shadow_2">
+        <img alt="Shape Color Shadow"
+          srcset="./assets/images/container-shape.svg 1x, ./assets/images/container-shape.svg 2x"
+          src="./assets/images/container-shape.svg"
+          width="254" height="196" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="relative bg-black spy120px" id="roadmap">
+      <div class="container grid-cols-12 gap-6 lg:grid">
+        <div class="col-span-3 max-lg:hidden">
+          <h3 class="our-story-3">ROADMAP</h3>
+        </div>
+        <div class="relative col-span-8 col-start-5">
+          <div class="max-xl:hidden">
+            <div class="absolute -left-30 top-0 h-[calc(100%-100px)] w-1 bg-white"></div>
+            <div class="absolute -left-30 top-0 h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-white outline outline-offset-2 outline-white"></div>
+            <div class="absolute -left-30 top-[400px] h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-white outline outline-offset-2 outline-white"></div>
+            <div class="absolute -left-30 top-[800px] h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-white outline outline-offset-2 outline-white"></div>
+            <div class="absolute -left-30 top-[1260px] h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-white outline outline-offset-2 outline-white"></div>
+          </div>
+          <div class="flex flex-col gap-6 lg:gap-12">
+            <div class="rounded-[32px] border-4 border-dashed border-transparent bg-white/5 duration-300 sp32px hover:border-4 hover:border-dashed hover:border-[#7130c3]">
+              <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 1</p>
+              <h4 class="h3 pt-6 font-title-font">The Frog Awakens 🐸</h4>
+              <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Staking & Rewards System Implementation</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> NFT Collection Launch</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Merch & Meme Store</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Charity & Community Initiatives</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Trending on Crypto Twitter</li>
+              </ul>
+            </div>
+            <div class="rounded-[32px] border-4 border-dashed border-transparent bg-white/5 duration-300 sp32px hover:border-4 hover:border-dashed hover:border-[#7130c3]">
+              <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 2</p>
+              <h4 class="h3 pt-6 font-title-font">The Hop Forward 🚀</h4>
+              <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> CoinGecko & CoinMarketCap Listings</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> First Exchange Listing</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" />10,000+ Holders Milestone</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Meme Contests & Community Giveaways</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Partnerships & Collaborations</li>
+              </ul>
+            </div>
+            <div class="rounded-[32px] border-4 border-dashed border-transparent bg-white/5 duration-300 sp32px hover:border-4 hover:border-dashed hover:border-[#7130c3]">
+              <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 3</p>
+              <h4 class="h3 pt-6 font-title-font">The Royal Leap 👑</h4>
+              <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> CoinGecko & CoinMarketCap Listings</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> First Exchange Listing</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" />10,000+ Holders Milestone</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Meme Contests & Community Giveaways</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Partnerships & Collaborations</li>
+              </ul>
+            </div>
+            <div class="rounded-[32px] border-4 border-dashed border-transparent bg-white/5 duration-300 sp32px hover:border-4 hover:border-dashed hover:border-[#7130c3]">
+              <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 4</p>
+              <h4 class="h3 pt-6 font-title-font">The Meme Empire 🌕</h4>
+              <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Major CEX Listings (Binance, KuCoin, etc.)</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Frogverse Metaverse Development 🏰</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Play-to-Earn Game Launch 🎮</li>
+                <li class="flex items-center justify-center gap-2"><img src="./assets/images/star-green.png" alt="" /> Global Meme Domination!</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#contact" class="button-primary-green">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faq -->
+    <section class="relative overflow-hidden spy120px" id="faq">
+      <img src="./assets/images/home-3-faq-blur.webp" alt="Image" class="absolute -bottom-10 left-1/2 -translate-x-1/2 blur-[125px]" />
+      <div class="container grid-cols-12 flex-col-reverse max-lg:flex max-lg:items-center lg:grid">
+        <div class="col-span-7 xxl:col-span-6">
+          <h3 class="title-white split_anim">FAQs</h3>
+          <p class="section-text reveal_anim max-w-[467px]">Got questions? We've got answers! Explore our FAQs to learn all about our meme coin adventure." 🚀💡</p>
+          <div class="reveal_anim flex flex-col gap-4 spt60px">
+            <!-- single faq -->
+            <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-white/5 p-4 sm:p-6">
+              <div class="faq-accordion-3 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                <div class="flex items-center gap-4">
+                  <h6 class="lead-text font-bold">1. What is memeco?</h6>
+                </div>
+                <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none text-n8 duration-300">
+                  <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                </div>
+              </div>
+              <div class="h-0 overflow-hidden duration-300">
+                <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-white/5 p-4 sm:p-6">
+              <div class="faq-accordion-3 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                <div class="flex items-center gap-4">
+                  <h6 class="lead-text font-bold">2. Is memeco safe to invest in?</h6>
+                </div>
+                <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none text-n8 duration-300">
+                  <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                </div>
+              </div>
+              <div class="h-0 overflow-hidden duration-300">
+                <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-white/5 p-4 sm:p-6">
+              <div class="faq-accordion-3 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                <div class="flex items-center gap-4">
+                  <h6 class="lead-text font-bold">3. Is there a roadmap for future developments?</h6>
+                </div>
+                <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none text-n8 duration-300">
+                  <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                </div>
+              </div>
+              <div class="h-0 overflow-hidden duration-300">
+                <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-white/5 p-4 sm:p-6">
+              <div class="faq-accordion-3 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                <div class="flex items-center gap-4">
+                  <h6 class="lead-text font-bold">4. How do I contact support?</h6>
+                </div>
+                <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none text-n8 duration-300">
+                  <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                </div>
+              </div>
+              <div class="h-0 overflow-hidden duration-300">
+                <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-white/5 p-4 sm:p-6">
+              <div class="faq-accordion-3 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                <div class="flex items-center gap-4">
+                  <h6 class="lead-text font-bold">5. How can I join the memeco community?</h6>
+                </div>
+                <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none text-n8 duration-300">
+                  <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                </div>
+              </div>
+              <div class="h-0 overflow-hidden duration-300">
+                <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal_anim col-span-5 col-start-8 max-lg:hidden" data-reveal-from="right">
+          <img src="./assets/images/home-3-faq.webp" alt="Image" class="max-lg:max-w-[350px]" />
+        </div>
+      </div>
+    </section>
+    <!-- Presale is live -->
+    <!-- <section class="relative bg-cover bg-top bg-no-repeat spy120px" id="contact">
+      <div class="container relative">
+        <div class="text-center">
+          <h3 class="title-white split_anim">Presale is live</h3>
+          <p class="m-text reveal_anim mx-auto max-w-[589px] pt-4 opacity-90 xl:pt-6">The presale is live! Grab your chance to join early, secure your tokens, and ride the wave to the moon!" 🚀💰</p>
+        </div>
+        <div class="grid-cols-12 flex-col gap-6 smt60px max-xl:flex xl:grid">
+          <div class="reveal_anim col-span-5 flex flex-col gap-5">
+            <div class="presale-border-3 p-6">
+              <img src="./assets/images/presale-live-icon-1.png" alt="Image" />
+              <p class="lead-text mt-5 font-bold">Connect Wallet</p>
+              <p class="m-text mt-2">Use Metamask or Trust Wallet to connect your wallet in seconds.</p>
+            </div>
+            <div class="presale-border-3 p-6">
+              <img src="./assets/images/presale-live-icon-2.png" alt="Image" />
+              <p class="lead-text mt-5 font-bold">Choose your payment method</p>
+              <p class="m-text mt-2">You can buy $LHUNT with USDT, ETH, MATIC and BNB.</p>
+            </div>
+            <div class="presale-border-3 p-6">
+              <img src="./assets/images/presale-live-icon-3.png" alt="Image" />
+              <p class="lead-text mt-5 font-bold">Confirm transaction</p>
+              <p class="m-text mt-2">Congratulations! You can claim your $LHUNT after the pre-sale</p>
+            </div>
+          </div>
+          <div class="reveal_anim col-span-7 xxl:col-span-6 xxl:col-start-7" data-reveal-from="right">
+            <div class="rounded-2xl bg-white/5 sp40px">
+              <div class="flex items-center justify-center gap-2">
+                <img src="./assets/images/coin.png" alt="Image" />
+                <span class="lead-text font-title-font">BUY MEME<span class="text-[#98FF38]">CO</span></span>
+              </div>
+              <div class="grid gap-5 spt40px sm:grid-cols-2">
+                <div class="m-text flex items-center justify-between rounded-lg border border-white/10 bg-white/5 p-3">
+                  <p class="">Current price</p>
+                  <p class="font-bold">$0.00138</p>
+                </div>
+                <div class="m-text flex items-center justify-between rounded-lg border border-white/10 bg-white/5 p-3">
+                  <p class="">Listing Price</p>
+                  <p class="font-bold">$0.005</p>
+                </div>
+              </div>
+              <div class="smt32px">
+                <p class="m-text text-right font-bold">$1,191,568.19 / $1,600,000</p>
+                <div class="relative mt-3 h-3 w-full bg-white">
+                  <div class="relative h-3 w-3/4 bg-[#98FE38]">
+                    <div class="absolute left-0 h-5 w-4 -translate-y-[23%] rounded bg-[#98FE38]"></div>
+                    <div class="absolute right-0 h-5 w-4 -translate-y-[23%] rounded bg-[#98FE38]"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 flex items-center justify-center">
+                <div class="m-text flex items-center justify-between gap-2.5 rounded-lg bg-h1Primary5 p-2.5 text-[#005308]">
+                  <p class=" ">Next price increase by</p>
+                  <i class="ph-fill ph-caret-down"></i>
+                  <p class="font-bold">10.14</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-3 smt32px">
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-[#98FE38]">
+                  <img src="./assets/images/coin-icon-1.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#005308]">USDT</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-[#98FE38]">
+                  <img src="./assets/images/coin-icon-2.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#005308]">USDC</p>
+                </div>
+
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-[#98FE38]">
+                  <img src="./assets/images/coin-icon-3.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#005308]">ETH</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-[#98FE38]">
+                  <img src="./assets/images/coin-icon-4.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#005308]">CARD</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-[#98FE38]">
+                  <img src="./assets/images/coin-icon-5.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#005308]">BNB</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-[#98FE38]">
+                  <img src="./assets/images/coin-icon-6.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#005308]">MATIC</p>
+                </div>
+              </div>
+
+              <div class="grid gap-5 spt40px sm:grid-cols-2">
+                <div>
+                  <div class="m-text flex items-center justify-between gap-3">
+                    <p class="font-semibold">You send</p>
+                    <p>$ 0.00000</p>
+                  </div>
+
+                  <div class="m-text mt-2 flex items-center justify-between rounded-lg border border-white/10 bg-white/5">
+                    <input class="w-[65%] bg-transparent p-3" placeholder="at least 0.001" />
+                    <div class="flex items-center gap-1 pr-2">
+                      <img src="./assets/images/coin-icon-3.png" alt="Image" />
+                      <p class="m-text font-bold">USDT</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="m-text flex items-center justify-between gap-3">
+                    <p class="font-semibold">You'll receive</p>
+                  </div>
+
+                  <div class="m-text mt-2 flex items-center justify-between rounded-lg border border-white/10 bg-white/5">
+                    <input class="w-[65%] bg-transparent p-3" placeholder="0" />
+                    <div class="flex items-center gap-1 pr-2">
+                      <img src="./assets/images/coin-icon-5.png" alt="Image" />
+                      <p class="m-text font-bold">LHUNT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="button-primary-green mx-auto block text-center smt32px">CONNECT WALLET</button>
+                <a href="#" class="m-text block text-center font-semibold underline underline-offset-2 smt40px">Don’t have wallet?</a>
+                <p class="m-text mt-1 text-center">Widget Powered by: memeco</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="relative overflow-hidden bg-black spt100px">
+      <img src="./assets/images/footer-gradinet-image.webp" alt="Image" class="absolute left-0 top-0 z-0 blur-[125px]" />
+      <div class="custom-container z-10 rounded-[60px] bg-black">
+        <div class="grid-cols-12 gap-6 spx80px md:grid">
+          <div class="col-span-4">
+            <h5 class="h5 max-w-[296px] font-title-font text-white">SUBSCRIBE OUR NEWSLETTER</h5>
+            <div class="flex max-w-[400px] items-center justify-between rounded-lg border border-white/10 bg-white/5 smt32px">
+              <input type="text" placeholder="Enter your email" class="w-full bg-transparent px-2" /> <button class="m-text bordeer h-full rounded-lg border-transparent bg-h1Primary2 py-4 text-center font-medium text-[#005308] duration-300 spx32px placeholder:text-white hover:border-h1Primary">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-span-4 spb40px">
+            <img src="./assets/images/home-3-footer-logo.png" alt="Image" />
+            <p class="m-text mt-4">The value of cryptocurrencies may fluctuate Profits may be subject to capital gains or other taxes applicable in your jurisdiction</p>
+            <div class="mt-6 flex items-center gap-3">
+              <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-facebook-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+              <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-instagram-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+              <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-twitter-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+              <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-linkedin-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+            </div>
+          </div>
+          <div class="relative col-span-4 spb40px">
+            <div class="md:mx-auto md:w-fit">
+              <h3 class="h5 font-title-font">Quick Links</h3>
+              <ul class="mt-6 flex flex-col gap-3">
+                <li>
+                  <a href="#" class="m-text flex items-center gap-1 duration-300 hover:text-white"><img src="./assets/images/star-white.png" alt="Footer Menu Star" /> <span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#about" class="m-text flex items-center gap-1 duration-300 hover:text-white"><img src="./assets/images/star-white.png" alt="Footer Menu Star" /> <span>About</span></a>
+                </li>
+                <li>
+                  <a href="#roadmap" class="m-text flex items-center gap-1 duration-300 hover:text-white"><img src="./assets/images/star-white.png" alt="Footer Menu Star" /> <span>Roadmap</span></a>
+                </li>
+                <li>
+                  <a href="#tokenomics" class="m-text flex items-center gap-1 duration-300 hover:text-white"><img src="./assets/images/star-white.png" alt="Footer Menu Star" /> <span>Tokenomics</span></a>
+                </li>
+                <li>
+                  <a href="#how-to-buy" class="m-text flex items-center gap-1 duration-300 hover:text-white"><img src="./assets/images/star-white.png" alt="Footer Menu Star" /> <span>How to Buy</span></a>
+                </li>
+                <li>
+                  <a href="#contact" class="m-text flex items-center gap-1 duration-300 hover:text-white"><img src="./assets/images/star-white.png" alt="Footer Menu Star" /> <span>Contact</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="relative">
+        <span class="absolute left-0 top-0 hidden h-px w-full bg-[#98FF38]/10 md:block">
+          <span class="line"></span>
+        </span>
+        <div class="custom-container flex flex-wrap items-center justify-center gap-4 py-6 sm:justify-between">
+          <p class="m-text">© memeco 2025. All rights reserved.</p>
+          <div class="flex items-center gap-6">
+            <a href="#" class="m-text duration-300 hover:text-h1Primary2">Privacy policy</a>
+            <a href="#" class="m-text duration-300 hover:text-h1Primary2">Terms of use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============ swiper plugin js ============ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- ============ aos js ============ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- ============ Phosphor Icons ============ -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <!-- ============ gsap js ============ -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <!-- =========== gsap ScrollTrigger js ============ -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <!-- ============= main js ============ -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

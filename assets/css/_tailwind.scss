@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dela+Gothic+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --body-font: "Bricolage Grotesque", serif;
+  --title-font: "Dela Gothic One", serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a {
+  line-height: 0px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* odomeeter reset */
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+  font-family: inherit !important;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  vertical-align: text-top !important;
+}
+
+@layer base {
+  body {
+    font-family: var(--body-font);
+    color: #000000;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  a {
+    line-height: 0px;
+  }
+}
+
+@layer utilities {
+  .custom-container {
+    @apply mx-auto max-4xl:px-5 4xl:max-w-[1760px];
+  }
+  .container {
+    @apply mx-auto max-w-[540px] max-sm:px-2 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1296px];
+  }
+
+  /*================ typography classes start ================ */
+
+  .d1 {
+    @apply text-[70px] leading-[120%] md:text-[80px] lg:text-[90px] xl:text-[100px] xxl:text-[120px];
+  }
+  .d2 {
+    @apply text-[45px] leading-[120%] sm:text-[55px] xl:text-[70px] xxl:text-[80px];
+  }
+  .d3 {
+    @apply text-[40px] leading-[120%] md:text-[50px] lg:text-[55px] xl:text-[60px] xxl:text-[72px];
+  }
+  .d4 {
+    @apply 3xl:text-[64px] text-[36px] leading-[120%] md:text-[44px] lg:text-[50px] xl:text-[55px];
+  }
+
+  .h1 {
+    @apply text-[32px] leading-[120%] md:text-[36px] lg:text-[40px] xxl:text-[48px];
+  }
+
+  .h2 {
+    @apply text-[28px] leading-[120%] md:text-[32px] xl:text-[36px] xxl:text-[40px];
+  }
+  .h3 {
+    @apply text-[24px] leading-[120%] xl:text-[28px] xxl:text-[32px];
+  }
+  .h4 {
+    @apply text-[16px] leading-[130%] lg:text-[18px] xl:text-[20px] xxl:text-[24px];
+  }
+  .h5 {
+    @apply text-[16px] leading-[130%] xl:text-[18px] xxl:text-[20px];
+  }
+  .h6 {
+    @apply text-[14px] leading-[130%] xxl:text-[16px];
+  }
+  .lead-text {
+    @apply text-[16px] leading-[150%] lg:text-[18px] xl:text-[20px] xxl:text-[24px];
+  }
+  .xl-text {
+    @apply text-[16px] leading-[150%] lg:text-[18px] xxl:text-[20px];
+  }
+  .l-text {
+    @apply text-[16px] leading-[150%] xxl:text-[18px];
+  }
+  .m-text {
+    @apply text-[16px] leading-[150%];
+  }
+  .s-text {
+    @apply text-[14px] leading-[150%];
+  }
+  .xs-text {
+    @apply text-[12px] leading-[150%];
+  }
+
+  /*================ typography classes end ================ */
+}
+
+/*================ scroll bar style start ================ */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #343839;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #005655;
+}
+
+.cart-scrollbar::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #005655;
+  border-radius: 10px;
+  width: 2px;
+}
