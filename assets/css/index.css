@@ -1306,7 +1306,7 @@ button,
   background-color: rgb(0 45 4 / var(--tw-bg-opacity));
 }
 .bg-\[\#005308\]{
-  --tw-bg-opacity: 1;
+  --tw-bg-opacity: 0;
   background-color: rgb(0 83 8 / var(--tw-bg-opacity));
 }
 .bg-\[\#005909\]{
@@ -1373,7 +1373,7 @@ button,
 }
 .bg-h1Primary2{
   --tw-bg-opacity: 1;
-  background-color: rgb(227 255 16 / var(--tw-bg-opacity));
+  background-color: rgb(var(--bs-secondary-rgb) , var(--tw-bg-opacity));
 }
 .bg-h1Primary5{
   --tw-bg-opacity: 1;
@@ -1655,7 +1655,7 @@ button,
 }
 .text-h1Primary2{
   --tw-text-opacity: 1;
-  color: rgb(227 255 16 / var(--tw-text-opacity));
+  color: rgb(var(--bs-primary-rgb) , var(--tw-text-opacity));
 }
 .text-n2{
   --tw-text-opacity: 1;
@@ -2652,13 +2652,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
     /* overflow: hidden; */
 }
 
-.home-3-nav-item>.nav_link_label:before {
+/* .home-3-nav-item>.nav_link_label:before {
   left: 0;
   top: 100%;
   text-align: center;
   position: absolute;
   content: attr(data-text);
-}
+} */
 
 .home-3-nav-item:hover{
   --tw-bg-opacity: 1;
@@ -3064,6 +3064,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 #how-to-buy::after {
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  content: "";
+  z-index: -1;
+  height: 11rem;
+  filter: blur(73rem);
+  position: absolute;
+  background-image: linear-gradient(132deg, #fc6500, #7064e9);
+}
+
+#faq::after {
   left: 0;
   right: 0;
   bottom: -40px;
@@ -3666,7 +3678,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   z-index: 10;
   opacity: 0.25;
-  background: linear-gradient(180deg, rgba(152, 255, 56, 0.7) -52.78%, rgba(152, 255, 56, 0) 116.3%);
+  background: linear-gradient(267deg, rgba(var(--bs-secondary-rgb), .56) 0, var(--bs-primary) 68%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -4498,4 +4510,17 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .\34xl\:text-\[300px\]{
     font-size: 300px;
   }
+}
+
+
+.section-bottom-blur::after{
+  left: 0;
+  right: 0;
+  bottom: 19rem;
+  content: "";
+  z-index: -1;
+  height: 128px;
+  filter: blur(145px);
+  position: absolute;
+  background-image: linear-gradient(45deg, #fc6500, #7064e9);
 }
