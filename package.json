@@ -1,0 +1,26 @@
+{
+  "name": "ipyees",
+  "version": "1.0.0",
+  "main": "assets/js/sendsms/sendotp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node assets/sendsms/sendotp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkarshtomar177/ipyees.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utkarshtomar177/ipyees/issues"
+  },
+  "homepage": "https://github.com/utkarshtomar177/ipyees#readme",
+  "description": "",
+   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "twilio": "^5.6.0"
+  }
+}
