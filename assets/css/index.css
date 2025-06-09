@@ -5010,14 +5010,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #mobileMenu ul {
-    margin-top: 3vh;
+    margin-top: 6vh;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; 
+    gap: 1.6rem; 
 }
 
 #mobileMenu a {
     color: #e2e8f0;
+    font-size: 16px; /* Increased from default */
     transition: all 0.3s ease;
 }
 
@@ -5027,9 +5028,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #mobileMenu .afterlogin {
-    background-color: #bc7012;
+    background-color: #F43AD3;
     color: white;
     font-weight: bold;
+    font-size: 20px; /* Slightly larger for the CTA button */
     border-radius: 8px;
     padding: 20px;
 }
