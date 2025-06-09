@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeOtpModal = document.getElementById("closeOtpModal");
   
   const getStartedButtons = document.querySelectorAll(
-    'a[href="#contact"], a.button-primary-green'
+    'a[href="#contact"]'
   );
   
   const tradeLinks = document.querySelectorAll('a[href="./forms/trade.html"]');
